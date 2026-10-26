@@ -29,7 +29,7 @@ else
 fi
 
 echo "==> Loading image into kind nodes"
-kind load docker-image moonlink:dev --name kind-moonlink-dev
+kind load docker-image moonlink:dev --name "$CLUSTER"
 
 echo "==> Applying Kubernetes manifests from: $DEPLOYMENT_CONFIG_FILE and $SERVICE_CONFIG_FILE"
 
